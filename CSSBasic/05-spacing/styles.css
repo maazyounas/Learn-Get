@@ -1,0 +1,4 @@
+@import "../styles.css";
+
+.demo-space span { display: inline-block; margin-right: 10px; padding: 6px 8px; background: #e2e8f0; border-radius: 6px; }
+

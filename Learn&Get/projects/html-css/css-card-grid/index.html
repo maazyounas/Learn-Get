@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn & Get | Card Grid</title>
+
+  <link rel="stylesheet" href="/Learn&Get/assets/theme.css" />
+  <link rel="stylesheet" href="../../../navbar/style.css" />
+  <link rel="stylesheet" href="../../../footer/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div data-include="../../../navbar/index.html"></div>
+
+  <main class="page">
+    <section class="projects-hero">
+      <h1>HTML + CSS Card Grid</h1>
+      <p>Build a responsive card layout with headings, text, and spacing.</p>
+    </section>
+
+    <section class="lesson-grid">
+      <article class="lesson-card">
+        <h2>HTML Tags</h2>
+        <ul class="tag-list">
+          <li><code>&lt;article&gt;</code> — one card item.</li>
+          <li><code>&lt;h3&gt;</code> — card title.</li>
+          <li><code>&lt;p&gt;</code> — card description.</li>
+          <li><code>&lt;span&gt;</code> — small label.</li>
+        </ul>
+      </article>
+
+      <article class="lesson-card">
+        <h2>CSS Properties</h2>
+        <ul class="tag-list">
+          <li><code>grid-template-columns</code> — auto-fit columns.</li>
+          <li><code>box-shadow</code> — card depth.</li>
+          <li><code>font-size</code> — typography hierarchy.</li>
+          <li><code>:hover</code> — hover styles.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="work-area">
+      <div class="editor">
+        <div class="editor-header">
+          <h2>HTML</h2>
+        </div>
+        <textarea id="html-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="editor">
+        <div class="editor-header">
+          <h2>CSS</h2>
+        </div>
+        <textarea id="css-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="preview">
+        <h2>Preview</h2>
+        <iframe id="preview-frame" title="Card grid preview"></iframe>
+        <button class="ghost-btn" type="button" id="reset-btn">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="../../../footer/index.html"></div>
+
+  <script src="../../../assets/app.js"></script>
+  <script src="../../../navbar/script.js"></script>
+  <script src="../../../footer/script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

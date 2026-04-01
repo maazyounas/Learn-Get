@@ -1,0 +1,6 @@
+@import "../styles.css";
+
+.demo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+
+.demo-grid span { background: #fecaca; padding: 6px; border-radius: 6px; text-align: center; }
+

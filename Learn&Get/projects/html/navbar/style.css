@@ -1,0 +1,134 @@
+/* HERO */
+.projects-hero {
+  text-align: center;
+  padding: 36px 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+}
+
+.projects-hero h1 {
+  margin-bottom: 10px;
+}
+
+.projects-hero p {
+  color: #4b5563;
+}
+
+/* LESSON GRID */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.lesson-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.lesson-card h2 {
+  margin-bottom: 12px;
+}
+
+.tag-list,
+.steps {
+  padding-left: 18px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* WORK AREA */
+.work-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* EDITOR + PREVIEW */
+.editor,
+.preview {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  min-height: 260px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 14px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+  background: #ffffff;
+}
+
+.hint {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+/* PREVIEW */
+#preview-frame {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: white;
+}
+
+/* BUTTON */
+.ghost-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ghost-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .work-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  textarea {
+    min-height: 220px;
+  }
+
+  #preview-frame {
+    min-height: 240px;
+  }
+}
+
+

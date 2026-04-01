@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn & Get | Form Validation</title>
+
+  <link rel="stylesheet" href="/Learn&Get/assets/theme.css" />
+  <link rel="stylesheet" href="../../../navbar/style.css" />
+  <link rel="stylesheet" href="../../../footer/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div data-include="../../../navbar/index.html"></div>
+
+  <main class="page">
+    <section class="projects-hero">
+      <h1>HTML + CSS + JavaScript: Form Validation</h1>
+      <p>Learn how JavaScript checks input and shows helpful messages.</p>
+    </section>
+
+    <section class="lesson-grid">
+      <article class="lesson-card">
+        <h2>HTML Tags</h2>
+        <ul class="tag-list">
+          <li><code>&lt;form&gt;</code> — wraps input fields.</li>
+          <li><code>&lt;input&gt;</code> — collects data.</li>
+          <li><code>&lt;label&gt;</code> — describes the input.</li>
+          <li><code>&lt;span&gt;</code> — error message placeholder.</li>
+        </ul>
+      </article>
+
+      <article class="lesson-card">
+        <h2>JavaScript</h2>
+        <ul class="tag-list">
+          <li><code>preventDefault</code> — stop form submit.</li>
+          <li><code>value</code> — read input value.</li>
+          <li><code>textContent</code> — show error text.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="work-area">
+      <div class="editor">
+        <div class="editor-header">
+          <h2>HTML</h2>
+        </div>
+        <textarea id="html-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="editor">
+        <div class="editor-header">
+          <h2>CSS</h2>
+        </div>
+        <textarea id="css-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="editor">
+        <div class="editor-header">
+          <h2>JavaScript</h2>
+        </div>
+        <textarea id="js-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="preview">
+        <h2>Preview</h2>
+        <iframe id="preview-frame" title="Form preview"></iframe>
+        <button class="ghost-btn" type="button" id="reset-btn">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="../../../footer/index.html"></div>
+
+  <script src="../../../assets/app.js"></script>
+  <script src="../../../navbar/script.js"></script>
+  <script src="../../../footer/script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

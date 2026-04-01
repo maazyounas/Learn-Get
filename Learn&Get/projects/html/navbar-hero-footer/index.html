@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layout Lab - Navbar + Hero + Footer</title>
+  <meta name="description" content="Interactive HTML editor to master navbar, hero section, and footer. Live preview, semantic tags, responsive design." />
+  <link rel="stylesheet" href="/Learn&Get/assets/theme.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../../navbar/style.css" />
+  <link rel="stylesheet" href="../../../footer/style.css" />
+</head>
+<body>
+  <div data-include="../../../navbar/index.html"></div>
+
+  <main class="container main-content">
+    <section class="hero-section">
+      <h1>Build a complete layout: Navbar, Hero, Footer</h1>
+      <p>Learn semantic HTML by editing real code. Every change reflects instantly in the preview. Understand why structure matters.</p>
+    </section>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h2>Key tags you will use</h2>
+        <ul class="tag-list">
+          <li><code>&lt;header&gt;</code> - wraps top banner and hero.</li>
+          <li><code>&lt;nav&gt;</code> - main navigation links.</li>
+          <li><code>&lt;section&gt;</code> - groups hero or content blocks.</li>
+          <li><code>&lt;h1&gt;</code> - primary headline (only one per page).</li>
+          <li><code>&lt;footer&gt;</code> - copyright and extra info.</li>
+          <li><code>&lt;ul&gt;</code> / <code>&lt;li&gt;</code> - navigation menus.</li>
+        </ul>
+        <div class="badge">Semantic = accessible + SEO</div>
+      </div>
+
+      <div class="info-card">
+        <h2>What to do</h2>
+        <ol class="steps-list">
+          <li>Edit the HTML in the editor below.</li>
+          <li>Preview updates automatically (right side).</li>
+          <li>Change the brand name, add links, rewrite the hero text.</li>
+          <li>Hit Reset to restore the starter layout.</li>
+        </ol>
+        <p class="tip">Tip: Try adding a second button or a background color inside the hero.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Why this matters</h2>
+        <p>Every website uses these three pillars: navigation (navbar), main message (hero), and closure (footer). Mastering them builds a solid foundation for responsive design and user experience.</p>
+        <div class="highlight">
+          <span>Pro:</span> Use <code>display: flex</code> in your navbar to align items horizontally.
+        </div>
+      </div>
+    </div>
+
+    <div class="work-area">
+      <div class="editor-panel">
+        <div class="panel-header">
+          <h2>HTML Editor</h2>
+          <button class="reset-btn" id="resetBtn" aria-label="Reset to starter HTML">Reset</button>
+        </div>
+        <textarea id="htmlEditor" spellcheck="false" placeholder="Write your HTML structure here..."></textarea>
+        <p class="editor-hint">Edit the <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code> to see live changes.</p>
+      </div>
+
+      <div class="preview-panel">
+        <div class="panel-header">
+          <h2>Live Preview</h2>
+          <div class="preview-badge">updates in real time</div>
+        </div>
+        <iframe id="previewFrame" title="Layout preview" class="preview-iframe"></iframe>
+        <p class="preview-note">Your code renders here like a real webpage.</p>
+      </div>
+    </div>
+  </main>
+
+  <div data-include="../../../footer/index.html"></div>
+
+  <script src="../../../assets/app.js"></script>
+  <script src="../../../navbar/script.js"></script>
+  <script src="../../../footer/script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

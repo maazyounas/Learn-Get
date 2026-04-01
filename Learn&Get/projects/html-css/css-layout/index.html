@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn & Get | CSS Layout Basics</title>
+
+  <link rel="stylesheet" href="/Learn&Get/assets/theme.css" />
+  <link rel="stylesheet" href="../../../navbar/style.css" />
+  <link rel="stylesheet" href="../../../footer/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div data-include="../../../navbar/index.html"></div>
+
+  <main class="page">
+    <section class="projects-hero">
+      <h1>CSS Layout Basics</h1>
+      <p>Use HTML structure + CSS layout properties to build clean sections.</p>
+    </section>
+
+    <section class="lesson-grid">
+      <article class="lesson-card">
+        <h2>HTML Tags</h2>
+        <ul class="tag-list">
+          <li><code>&lt;section&gt;</code> — groups a content block.</li>
+          <li><code>&lt;h2&gt;</code> — section heading.</li>
+          <li><code>&lt;p&gt;</code> — description text.</li>
+          <li><code>&lt;div&gt;</code> — layout wrapper.</li>
+        </ul>
+      </article>
+
+      <article class="lesson-card">
+        <h2>CSS Properties</h2>
+        <ul class="tag-list">
+          <li><code>display: grid</code> — make a grid layout.</li>
+          <li><code>gap</code> — space between items.</li>
+          <li><code>padding</code> — inner spacing.</li>
+          <li><code>border-radius</code> — rounded corners.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="work-area">
+      <div class="editor">
+        <div class="editor-header">
+          <h2>HTML</h2>
+        </div>
+        <textarea id="html-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="editor">
+        <div class="editor-header">
+          <h2>CSS</h2>
+        </div>
+        <textarea id="css-editor" spellcheck="false"></textarea>
+      </div>
+
+      <div class="preview">
+        <h2>Preview</h2>
+        <iframe id="preview-frame" title="Layout preview"></iframe>
+        <button class="ghost-btn" type="button" id="reset-btn">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="../../../footer/index.html"></div>
+
+  <script src="../../../assets/app.js"></script>
+  <script src="../../../navbar/script.js"></script>
+  <script src="../../../footer/script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

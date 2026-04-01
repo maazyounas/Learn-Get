@@ -1,0 +1,92 @@
+﻿:root {
+  --bg: #f7f3eb;
+  --card: #ffffff;
+  --ink: #202020;
+  --accent: #1b6ef3;
+  --border: #e6dfd4;
+  --mono: "Courier New", Courier, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #fff7e8, #f1eadf 65%);
+  color: var(--ink);
+}
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 8px;
+}
+.subtitle { margin: 8px 0 0; color: #555; }
+.lesson-details {
+  margin-top: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.05);
+}
+.lesson-details h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+.details-subtitle {
+  margin: 0 0 16px;
+  color: #555;
+  line-height: 1.6;
+}
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.detail-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+.detail-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.detail-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+.card {
+  display: block;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+.card h2 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: #555; font-size: 14px; }
+code { font-family: var(--mono); }

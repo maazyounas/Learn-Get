@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn & Get | HTML Navbar Project</title>
+
+  <link rel="stylesheet" href="/Learn&Get/assets/theme.css" />
+  <link rel="stylesheet" href="../../../navbar/style.css" />
+  <link rel="stylesheet" href="../../../footer/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div data-include="../../../navbar/index.html"></div>
+
+  <main class="page">
+
+    <section class="projects-hero">
+      <h1>HTML Navbar</h1>
+      <p>Build a clean navigation bar and understand the purpose of each tag.</p>
+    </section>
+
+    <section class="lesson-grid">
+      <article class="lesson-card">
+        <h2>Tags You Will Use</h2>
+        <ul class="tag-list">
+          <li><code>&lt;nav&gt;</code> wraps navigation links</li>
+          <li><code>&lt;ul&gt;</code> groups navigation items</li>
+          <li><code>&lt;li&gt;</code> each navigation item</li>
+          <li><code>&lt;a&gt;</code> clickable link</li>
+          <li><code>&lt;div&gt;</code> logo container</li>
+        </ul>
+      </article>
+
+      <article class="lesson-card">
+        <h2>What To Do</h2>
+        <ol class="steps">
+          <li>Add your site name inside logo</li>
+          <li>Add at least 4 links</li>
+          <li>Change link text</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="work-area">
+
+      <div class="editor">
+        <div class="editor-header">
+          <h2>HTML Editor</h2>
+          <button class="ghost-btn" id="reset-btn">Reset</button>
+        </div>
+
+        <textarea id="html-editor" spellcheck="false"></textarea>
+        <p class="hint">Type your HTML above. Preview updates automatically.</p>
+      </div>
+
+      <div class="preview">
+        <h2>Preview</h2>
+        <iframe id="preview-frame"></iframe>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div data-include="../../../footer/index.html"></div>
+
+  <script src="../../../assets/app.js"></script>
+  <script src="../../../navbar/script.js"></script>
+  <script src="../../../footer/script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
