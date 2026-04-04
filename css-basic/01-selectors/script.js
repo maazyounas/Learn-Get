@@ -4,6 +4,7 @@ const editorEl = document.getElementById("editor");
 const runBtn = document.getElementById("run");
 const resetBtn = document.getElementById("reset");
 
+
 function setSyntax(text) {
   syntaxEl.textContent = text.trim();
 }
