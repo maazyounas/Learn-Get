@@ -24,6 +24,24 @@ body {
   line-height: 1.5;
 }
 
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 10px 14px;
+  background: #111827;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 code {
   font-family: var(--mono);
   background: #f0ede8;

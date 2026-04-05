@@ -24,8 +24,8 @@ const initHero = async () => {
   if (!heroContent || !learningSlot || !projectSlot) return;
 
   await Promise.all([
-    loadComponent(learningSlot, "../learningBtnDetail/index.html"),
-    loadComponent(projectSlot, "../projectBtnDetail/index.html"),
+    loadComponent(learningSlot, "/learn-get/learningBtnDetail/index.html"),
+    loadComponent(projectSlot, "/learn-get/projectBtnDetail/index.html"),
   ]);
 
   const startLearningBtn = document.getElementById("start-learning-btn");
