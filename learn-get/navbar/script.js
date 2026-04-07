@@ -20,12 +20,19 @@ function initNavbar() {
     mobileRight.classList.add("mobile-nav-right");
     mobileContent.append(mobileLinks, mobileRight);
 
+    const setMenuOpen = (isOpen) => {
+        mobileSidebar.classList.toggle("active", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+    };
+
     menuToggle.addEventListener("click", () => {
-        mobileSidebar.classList.add("active");
+        const isOpen = !mobileSidebar.classList.contains("active");
+        setMenuOpen(isOpen);
     });
 
     closeSidebar.addEventListener("click", () => {
-        mobileSidebar.classList.remove("active");
+        setMenuOpen(false);
     });
 
     navbarInitialized = true;
