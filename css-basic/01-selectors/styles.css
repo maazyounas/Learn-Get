@@ -1,4 +1,4 @@
-@import "../styles.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 .demo-card {
   padding: 10px;
@@ -31,4 +31,6 @@
 .secondary:hover {
   filter: brightness(0.9);
 }
+
+
 

@@ -102,3 +102,20 @@ pre {
   margin-bottom: 12px;
   resize: vertical;
 }
+
+.lesson-nav {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.lesson-nav .nav-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson-nav .next {
+  margin-left: auto;
+}

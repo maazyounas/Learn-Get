@@ -1,4 +1,6 @@
-@import "../styles.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 .demo-shadow { padding: 10px; border: 1px solid #c9bfae; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
+
+
 

@@ -17,12 +17,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 18px;
-  margin: 24px 0 12px;
+  margin: 24px 0 var(--section-gap);
 }
 
 .project-details .detail-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 16px 18px;
   box-shadow: var(--shadow-soft);

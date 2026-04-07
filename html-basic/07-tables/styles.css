@@ -1,4 +1,5 @@
-@import "/learn-get/assets/lesson-base.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 .demo-table { border-collapse: collapse; width: 100%; max-width: 320px; } .demo-table th, .demo-table td { border: 1px solid #c9bfae; padding: 6px; text-align: left; }
+
 

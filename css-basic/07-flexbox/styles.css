@@ -1,6 +1,8 @@
-@import "../styles.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 .demo-flex { display: flex; gap: 8px; }
 
 .demo-flex span { background: #c7d2fe; padding: 6px 10px; border-radius: 6px; }
+
+
 

@@ -1,4 +1,4 @@
-@import "../styles.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 @keyframes pulse {
   from { opacity: 0.6; }
@@ -11,4 +11,6 @@
   border-radius: 6px;
   animation: pulse 1s infinite alternate;
 }
+
+
 

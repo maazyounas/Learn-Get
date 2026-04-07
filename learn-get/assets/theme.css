@@ -9,6 +9,7 @@
   --layout-width: 1200px;
   --radius-md: 20px;
   --radius-sm: 14px;
+  --section-gap: 56px;
   --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
   --shadow-card: 0 12px 28px rgba(0, 0, 0, 0.06);
   --transition: all 0.2s ease;
@@ -19,7 +20,10 @@
 body {
   margin: 0;
   font-family: system-ui, "Segoe UI", "Inter", "Helvetica Neue", sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(31, 109, 177, 0.08), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(31, 109, 177, 0.06), transparent 50%),
+    var(--bg);
   color: var(--ink);
   line-height: 1.5;
 }

@@ -1,4 +1,5 @@
-@import "/learn-get/assets/lesson-base.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 .demo-btn { padding: 8px 12px; border: none; border-radius: 6px; background: #22c55e; color: white; font-weight: 600; }
+
 

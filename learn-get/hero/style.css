@@ -2,7 +2,7 @@
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 50px 40px;
+  padding: var(--section-gap) 40px;
   box-shadow: var(--shadow-soft);
 }
 
@@ -69,6 +69,11 @@
   background: #155a96;
   transform: translateY(-2px);
 }
+.primary-btn:focus-visible {
+  outline: 3px solid rgba(31, 109, 177, 0.35);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(31, 109, 177, 0.2);
+}
 
 .secondary-btn {
   border: 1.5px solid #1f6db1;
@@ -83,6 +88,11 @@
 .secondary-btn:hover {
   background: #1f6db1;
   color: white;
+}
+.secondary-btn:focus-visible {
+  outline: 3px solid rgba(31, 109, 177, 0.35);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(31, 109, 177, 0.2);
 }
 
 /* features */
@@ -112,7 +122,7 @@
 /* responsive */
 @media (max-width: 768px) {
   .hero {
-    padding: 35px 22px;
+    padding: calc(var(--section-gap) - 12px) 22px;
   }
 
   .hero h1 {
@@ -121,6 +131,12 @@
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .hero-stats {

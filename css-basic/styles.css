@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .page {
   max-width: 980px;
@@ -119,6 +119,7 @@ a:hover {
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
 }
 .card h2 {
   margin: 0 0 6px;

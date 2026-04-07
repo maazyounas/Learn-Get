@@ -1,4 +1,5 @@
-@import "/learn-get/assets/lesson-base.css";
+@import "../../learn-get/assets/lesson-base.css";
 
 .demo-form { display: grid; gap: 6px; max-width: 260px; } .demo-form input { padding: 6px 8px; border: 1px solid #c9bfae; border-radius: 6px; }
+
 
