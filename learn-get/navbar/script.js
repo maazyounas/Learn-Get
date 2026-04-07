@@ -24,6 +24,7 @@ function initNavbar() {
         mobileSidebar.classList.toggle("active", isOpen);
         menuToggle.setAttribute("aria-expanded", String(isOpen));
         menuToggle.textContent = isOpen ? "✕" : "☰";
+        document.body.classList.toggle("menu-open", isOpen);
     };
 
     menuToggle.addEventListener("click", () => {
@@ -34,6 +35,16 @@ function initNavbar() {
     closeSidebar.addEventListener("click", () => {
         setMenuOpen(false);
     });
+
+    const mobileDropdownToggle = mobileContent.querySelector(".dropdown > a");
+    if (mobileDropdownToggle) {
+        mobileDropdownToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            const dropdown = mobileDropdownToggle.closest(".dropdown");
+            if (!dropdown) return;
+            dropdown.classList.toggle("is-open");
+        });
+    }
 
     navbarInitialized = true;
 }

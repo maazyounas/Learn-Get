@@ -192,6 +192,7 @@
   gap: 20px;
   transition: 0.35s ease;
   z-index: 999;
+  overflow-y: auto;
 }
 
 .mobile-content {
@@ -217,9 +218,19 @@
 .mobile-sidebar .dropdown-menu {
   position: static;
   box-shadow: none;
-  display: flex;
+  display: none;
   margin-top: 8px;
   padding-left: 6px;
+}
+.mobile-sidebar .dropdown.is-open .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-sidebar .dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .close-btn {
@@ -230,6 +241,10 @@
 
 .mobile-sidebar.active {
   left: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 /* MOBILE */
