@@ -1,0 +1,6 @@
+@import "../styles.css";
+
+.demo-trans { display: inline-block; padding: 8px 10px; background: #bbf7d0; border-radius: 6px; transition: transform 0.2s ease; }
+
+.demo-trans:hover { transform: translateY(-3px); }
+
